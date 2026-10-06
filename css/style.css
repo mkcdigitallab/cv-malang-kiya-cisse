@@ -3,3 +3,166 @@
 @media(max-width:800px){.page-shell{width:min(calc(100% - 24px),600px)}.topbar{height:64px}.brand strong{display:none}.top-actions{gap:10px}.cv{margin:20px 0 40px;border-radius:20px}.hero{grid-template-columns:82px 1fr;gap:18px;padding:24px 20px}.hero-photo{width:82px;height:82px;border-radius:15px;grid-row:1 / span 2}.hero h1{font-size:clamp(38px,11vw,58px);margin:8px 0}.role{font-size:15px}.summary{font-size:12px}.hero-contact{grid-column:1 / -1;align-items:flex-start;gap:7px;padding-top:15px;border-top:1px solid var(--line);font-size:10px}.content{grid-template-columns:1fr}.sidebar{border-right:0;border-bottom:1px solid var(--line);padding:25px 20px}.main{padding:28px 20px}.sidebar section+section,.main section+section{margin-top:30px}.project-grid{grid-template-columns:1fr}.section-heading{display:block}.section-heading>span{display:block;margin-top:-9px;margin-bottom:14px}.profile{font-size:14px}.top-actions .print-btn{padding:8px 9px;font-size:10px}}
 @media(max-width:420px){.top-actions>a{display:none}.hero{grid-template-columns:64px 1fr;padding:20px 16px}.hero-photo{width:64px;height:64px}.hero h1{font-size:37px}.role{font-size:13px}.summary{font-size:11px}.main{padding:25px 16px}.sidebar{padding:23px 16px}.project-title{gap:10px}.project h2{font-size:19px}.project-title span{font-size:7px}.profile{font-size:13px}.page-shell{width:calc(100% - 16px)}}
 @media print{@page{size:A4;margin:0}body{background:#fff}.page-shell{width:auto}.topbar,footer{display:none}.cv{margin:0;border:0;border-radius:0;box-shadow:none}.hero{padding:12mm 12mm}.content{grid-template-columns:62mm 1fr}.sidebar{padding:7mm 6mm 7mm 9mm}.main{padding:7mm 9mm}.hero h1{font-size:24pt}.hero-photo{width:27mm;height:27mm}.project-grid{gap:3mm}.compact{padding:3mm;margin-top:3mm}.sidebar section+section,.main section+section{margin-top:5mm}}
+
+
+/* Print: one clean A4 CV, independent from the screen layout */
+@media print{
+  @page{size:A4 portrait;margin:8mm}
+  html,body{width:210mm;min-height:297mm}
+  body{
+    background:#fff !important;
+    color:#111 !important;
+    font-size:9.2pt;
+    line-height:1.35;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+  .page-shell{width:194mm;margin:0 auto}
+  .topbar,footer{display:none !important}
+  .cv{
+    width:194mm;
+    margin:0;
+    background:#fff !important;
+    border:1px solid #d9d9d9;
+    border-radius:0;
+    box-shadow:none;
+    overflow:visible;
+  }
+  .hero{
+    grid-template-columns:25mm 1fr 52mm;
+    gap:6mm;
+    min-height:47mm;
+    padding:7mm;
+    background:#f5f6f2 !important;
+    border-bottom:1px solid #d9d9d9;
+  }
+  .hero-photo{
+    width:25mm;height:25mm;
+    border-radius:4mm;
+    border:1px solid #bbb;
+    transform:none;
+  }
+  .eyebrow,.section-label{font-size:6.5pt;letter-spacing:.11em}
+  .hero h1{
+    font-size:29pt;
+    line-height:.86;
+    margin:2.5mm 0;
+    color:#111 !important;
+  }
+  .hero h1 em{color:#5f8500 !important}
+  .role{font-size:11pt;color:#111 !important}
+  .summary{
+    max-width:none;
+    margin:2mm 0 0;
+    font-size:8.2pt;
+    line-height:1.35;
+    color:#555 !important;
+  }
+  .hero-contact{
+    gap:1.5mm;
+    align-items:flex-end;
+    font-size:7.5pt;
+    color:#222 !important;
+  }
+  .content{
+    display:grid;
+    grid-template-columns:54mm 1fr;
+  }
+  .sidebar{
+    padding:5mm 5mm 5mm 6mm;
+    background:#f3f4f1 !important;
+    border-right:1px solid #d9d9d9;
+  }
+  .main{padding:5mm 7mm}
+  .sidebar section+section,.main section+section{margin-top:5mm}
+  .section-label{
+    padding-bottom:1.5mm;
+    margin-bottom:2.5mm;
+    color:#5f8500 !important;
+    border-bottom:1px solid #d9d9d9;
+  }
+  .skill{gap:1mm;margin-bottom:3.5mm}
+  .skill b,.side-item b,.experience b{
+    font-size:8.5pt;
+    color:#111 !important;
+  }
+  .skill span,.side-item p,.language span{
+    font-size:7.2pt;
+    color:#555 !important;
+  }
+  .side-item{gap:1mm;margin-bottom:3.5mm}
+  .date{font-size:6.5pt;color:#5f8500 !important}
+  .language{padding:1.5mm 0;border-bottom:1px solid #ddd}
+  .availability-box{
+    padding:3mm;
+    border:1px solid #b9cc8b;
+    border-radius:2mm;
+    background:#f0f7df !important;
+  }
+  .availability-box strong{font-size:9pt;color:#111 !important}
+  .availability-box p:last-child{font-size:6.8pt;color:#555 !important}
+  .profile{
+    max-width:none;
+    font-size:8.7pt;
+    line-height:1.45;
+    color:#333 !important;
+  }
+  .section-heading>span{
+    font-size:6.2pt;
+    color:#666 !important;
+  }
+  .project{
+    padding:3.2mm 0;
+    break-inside:avoid;
+    page-break-inside:avoid;
+  }
+  .project:first-of-type{padding-top:0}
+  .featured-project{padding-left:3mm;border-left:1.2mm solid #78a000}
+  .project h2{font-size:12.5pt;color:#111 !important}
+  .project-title{gap:3mm}
+  .project-title span{
+    font-size:6.3pt;
+    color:#666 !important;
+  }
+  .project p{
+    font-size:7.5pt;
+    line-height:1.35;
+    margin:1.2mm 0 0;
+    max-width:none;
+    color:#555 !important;
+  }
+  .project .stack{
+    font-size:6.6pt;
+    color:#5f8500 !important;
+  }
+  .project>a{
+    margin-top:1.5mm;
+    font-size:6.7pt;
+    color:#222 !important;
+  }
+  .project-grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:2.5mm;
+    break-inside:avoid;
+    page-break-inside:avoid;
+  }
+  .compact{
+    padding:2.5mm;
+    margin-top:2.5mm;
+    background:#f3f4f1 !important;
+    border:1px solid #e0e0e0;
+    border-radius:1.5mm;
+  }
+  .compact h2{font-size:9.5pt}
+  .compact p{font-size:6.6pt;line-height:1.35}
+  .experience{
+    padding:2mm 0;
+    break-inside:avoid;
+    page-break-inside:avoid;
+  }
+  .experience p{font-size:7pt;line-height:1.35;color:#555 !important}
+  .closing{gap:1.8mm}
+  .closing a{font-size:7.5pt;color:#222 !important}
+  a{text-decoration:none !important}
+  .main section,.sidebar section{break-inside:avoid-page}
+}
