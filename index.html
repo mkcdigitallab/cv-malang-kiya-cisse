@@ -1,189 +1,135 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV de Malang Kiya Cissé - Développeur Web & Mobile">
-    <title>Malang Kiya Cissé — CV</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV de Malang Kiya Cissé — Développeur Web & Mobile à Dakar.">
+  <meta name="theme-color" content="#090a0c">
+  <title>Malang Kiya Cissé — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="CV de Malang Kiya Cissé">
+        <span>MKC</span><strong>CURRICULUM VITAE</strong>
+      </a>
+      <div class="top-actions">
+        <button class="print-btn" type="button" onclick="window.print()">Imprimer / PDF</button>
+        <a href="https://malang-kiya-cisse-portfolio.onrender.com" target="_blank" rel="noreferrer">Portfolio ↗</a>
+      </div>
+    </header>
+
     <main class="cv">
-
-        <header class="header">
-            <div class="photo-frame">
-                <img src="./assets/photo.jpg" alt="Photo de Malang Kiya Cissé">
-            </div>
-
-            <div class="identity">
-                <p class="eyebrow">DÉVELOPPEMENT WEB & MOBILE</p>
-                <h1>Malang Kiya Cissé</h1>
-                <h2>Développeur Web &amp; Mobile</h2>
-                <p class="location">Dakar, Sénégal</p>
-            </div>
-
-            <div class="contact">
-                <p>GitHub : github.com/mkcdigitallab</p>
-                <!-- Ajoute ici ton téléphone et ton adresse e-mail avant l'envoi du CV. -->
-            </div>
-        </header>
-
-        <div class="content">
-
-            <aside class="sidebar">
-
-                <section>
-                    <h3>COMPÉTENCES</h3>
-
-                    <div class="skill-group">
-                        <h4>Développement</h4>
-                        <p>PHP · JavaScript · HTML · CSS · Laravel · POO · MVC</p>
-                    </div>
-
-                    <div class="skill-group">
-                        <h4>Bases de données</h4>
-                        <p>MySQL · PostgreSQL · SQLite · SQL</p>
-                    </div>
-
-                    <div class="skill-group">
-                        <h4>Outils &amp; environnement</h4>
-                        <p>Git · GitHub · GitLab · Docker · Linux · Bash</p>
-                    </div>
-
-                    <div class="skill-group">
-                        <h4>Qualité &amp; conception</h4>
-                        <p>CI/CD · tests · analyse statique · UML · PlantUML</p>
-                    </div>
-                </section>
-
-                <section>
-                    <h3>FORMATION</h3>
-
-                    <article class="side-item">
-                        <h4>Sonatel Academy — ODC</h4>
-                        <p class="meta">En cours</p>
-                        <p>Développement Web &amp; Mobile</p>
-                    </article>
-
-                    <article class="side-item">
-                        <h4>Université numérique Cheikh Hamidou Kane</h4>
-                        <p class="meta">1 année de licence</p>
-                        <p>Mathématiques appliquées et Informatique</p>
-                    </article>
-
-                    <article class="side-item">
-                        <h4>Lycée El Hadji Ibrahima Diop</h4>
-                        <p class="meta">2024</p>
-                        <p>Baccalauréat S2</p>
-                    </article>
-                </section>
-
-                <section>
-                    <h3>LANGUES</h3>
-                    <p class="pending">À compléter</p>
-                </section>
-
-            </aside>
-
-            <div class="main">
-
-                <section>
-                    <h3>PROFIL</h3>
-                    <p class="profile">
-                        Apprenant en Développement Web &amp; Mobile à Sonatel Academy,
-                        je développe des applications en PHP et JavaScript et je travaille
-                        avec des bases de données, Git, GitLab et Docker. J'apprends en
-                        construisant des projets concrets, avec une attention particulière
-                        portée à la compréhension du code, à sa maintenabilité et à son évolution.
-                    </p>
-                </section>
-
-                <section>
-                    <h3>PROJETS</h3>
-
-                    <article class="project">
-                        <div class="project-heading">
-                            <h4>Reservation-Salles</h4>
-                            <span>Projet fil rouge</span>
-                        </div>
-                        <p class="technologies">
-                            PHP · Laravel · MySQL · Docker · GitLab CI/CD
-                        </p>
-                        <p>
-                            Application de gestion des réservations de salles. Travail sur
-                            l'évolution du modèle de données, les migrations Laravel,
-                            les relations Eloquent, les règles métier, la qualité du code,
-                            les pipelines CI/CD et la documentation du projet.
-                        </p>
-                    </article>
-
-                    <article class="project">
-                        <div class="project-heading">
-                            <h4>Gestion-Ateliers</h4>
-                            <span>Application PHP</span>
-                        </div>
-                        <p class="technologies">
-                            PHP · POO · MVC · SQL
-                        </p>
-                        <p>
-                            Application destinée à faciliter la gestion d'ateliers :
-                            informations, disponibilités, réservations, tarifs et règles
-                            de gestion. Conception et développement avec une architecture
-                            MVC et la programmation orientée objet.
-                        </p>
-                    </article>
-
-                    <article class="project">
-                        <div class="project-heading">
-                            <h4>Autres réalisations</h4>
-                            <span>PHP · POO · MVC · SQL</span>
-                        </div>
-                        <p>
-                            Plusieurs applications et exercices réalisés autour de la
-                            programmation orientée objet, de l'architecture MVC,
-                            des bases de données et du développement d'applications :
-                            Devoir2, VTC-MVC-PHP, FastFood-MVC, GestionEtudiant et autres.
-                        </p>
-                    </article>
-                </section>
-
-                <section>
-                    <h3>EXPÉRIENCES &amp; ACTIVITÉS</h3>
-
-                    <article class="experience">
-                        <h4>Encadrement scolaire</h4>
-                        <p>
-                            Accompagnement de jeunes de mon entourage dans l'apprentissage
-                            des mathématiques et de matières associées.
-                        </p>
-                    </article>
-
-                    <article class="experience">
-                        <h4>Prestations pour particuliers</h4>
-                        <p>
-                            Réalisation de CV et de portfolios pour des particuliers,
-                            avec adaptation du contenu et de la présentation à leur besoin.
-                        </p>
-                    </article>
-
-                    <article class="experience">
-                        <h4>Autoformation en informatique</h4>
-                        <p>
-                            Recherche et apprentissage autonome autour du développement,
-                            des outils informatiques et du fonctionnement du Web.
-                        </p>
-                    </article>
-                </section>
-
-                <section>
-                    <h3>PRÉSENCE EN LIGNE</h3>
-                    <p class="links">
-                        <strong>GitHub</strong> · github.com/mkcdigitallab
-                    </p>
-                </section>
-
-            </div>
+      <section class="hero">
+        <div class="hero-photo"><img src="assets/photo.jpg" alt="Portrait de Malang Kiya Cissé"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">DAKAR, SÉNÉGAL · DÉVELOPPEMENT WEB & MOBILE</p>
+          <h1>Malang Kiya<br><em>Cissé</em></h1>
+          <p class="role">Développeur Web & Mobile</p>
+          <p class="summary">Je construis des applications en partant du besoin : comprendre, structurer, développer, tester et faire évoluer un produit proprement.</p>
         </div>
+        <div class="hero-contact">
+          <a href="mailto:papac8443@gmail.com">papac8443@gmail.com</a>
+          <a href="https://github.com/mkcdigitallab" target="_blank" rel="noreferrer">github.com/mkcdigitallab</a>
+          <a href="https://gitlab.com/mkcdigitallab" target="_blank" rel="noreferrer">gitlab.com/mkcdigitallab</a>
+        </div>
+      </section>
+
+      <div class="content">
+        <aside class="sidebar">
+          <section>
+            <p class="section-label">01 · COMPÉTENCES</p>
+            <div class="skill"><b>Développement</b><span>PHP · JavaScript · HTML · CSS · Laravel · POO · MVC</span></div>
+            <div class="skill"><b>Données</b><span>PostgreSQL · MySQL · SQLite · SQL</span></div>
+            <div class="skill"><b>Ingénierie</b><span>Git · GitHub · GitLab · Docker · Linux · Bash</span></div>
+            <div class="skill"><b>Qualité</b><span>CI/CD · tests · analyse statique · UML · PlantUML</span></div>
+          </section>
+
+          <section>
+            <p class="section-label">02 · FORMATION</p>
+            <article class="side-item">
+              <b>Sonatel Academy — ODC</b>
+              <span class="date">En cours</span>
+              <p>Développement Web & Mobile</p>
+            </article>
+            <article class="side-item">
+              <b>Université numérique Cheikh Hamidou Kane</b>
+              <span class="date">1 année de licence</span>
+              <p>Mathématiques appliquées et Informatique</p>
+            </article>
+            <article class="side-item">
+              <b>Lycée El Hadji Ibrahima Diop</b>
+              <span class="date">2024</span>
+              <p>Baccalauréat S2</p>
+            </article>
+          </section>
+
+          <section>
+            <p class="section-label">03 · LANGUES</p>
+            <div class="language"><b>Français</b><span>Professionnel</span></div>
+            <div class="language"><b>Wolof</b><span>Courant</span></div>
+            <div class="language"><b>Anglais</b><span>Technique</span></div>
+          </section>
+
+          <section class="availability-box">
+            <p class="section-label">04 · DISPONIBILITÉ</p>
+            <strong>Ouvert aux opportunités</strong>
+            <p>Stage · alternance · collaboration · projet réel</p>
+          </section>
+        </aside>
+
+        <div class="main">
+          <section>
+            <p class="section-label">05 · PROFIL</p>
+            <p class="profile">Apprenant en Développement Web & Mobile à Sonatel Academy, je développe des applications PHP et JavaScript avec des bases de données et des outils d'ingénierie comme Git, GitLab et Docker. Mon objectif est de maîtriser autant la construction du logiciel que la structuration et la gestion technique d'un projet.</p>
+          </section>
+
+          <section>
+            <div class="section-heading"><p class="section-label">06 · PROJETS</p><span>PRODUITS · APPLICATIONS · FIL ROUGE</span></div>
+
+            <article class="project featured-project">
+              <div class="project-title"><h2>Reservation-Salles</h2><span>Projet fil rouge</span></div>
+              <p class="stack">Laravel · PHP · PostgreSQL · Docker · GitLab CI/CD</p>
+              <p>Application métier de gestion des salles et réservations. Travail sur les règles métier, le modèle de données, les validations, l'architecture applicative, les tests, la qualité du code, les notifications et les pipelines CI/CD.</p>
+              <a href="https://github.com/mkcdigitallab/Reservation-Salles" target="_blank" rel="noreferrer">Voir le projet ↗</a>
+            </article>
+
+            <article class="project">
+              <div class="project-title"><h2>Fondé 44</h2><span>Produit réel</span></div>
+              <p class="stack">Web · PWA · Produit · Gestion · Livraison</p>
+              <p>Transformation d'une activité artisanale familiale en expérience numérique : catalogue, disponibilité, commande, livraison et espace de gestion, avec une approche mobile-first.</p>
+              <a href="https://github.com/mkcdigitallab/fonde-44" target="_blank" rel="noreferrer">Voir le projet ↗</a>
+            </article>
+
+            <div class="project-grid">
+              <article class="project compact"><div class="project-title"><h2>Carnet BI</h2><span>Data</span></div><p>Applications autour des données, de la gestion et de la restitution d'informations.</p></article>
+              <article class="project compact"><div class="project-title"><h2>Signalement Urbain</h2><span>Web</span></div><p>Projet orienté terrain, structuration des signalements et logique applicative.</p></article>
+              <article class="project compact"><div class="project-title"><h2>FastFood MVC</h2><span>PHP</span></div><p>Application d'apprentissage de la POO, du MVC et de la gestion de données.</p></article>
+            </div>
+          </section>
+
+          <section>
+            <p class="section-label">07 · EXPÉRIENCES & ACTIVITÉS</p>
+            <div class="experience"><b>Encadrement scolaire</b><p>Accompagnement de jeunes de mon entourage dans l'apprentissage des mathématiques et matières associées.</p></div>
+            <div class="experience"><b>Prestations pour particuliers</b><p>Réalisation de CV et portfolios adaptés au besoin et au contexte de chaque personne.</p></div>
+            <div class="experience"><b>Autoformation en informatique</b><p>Apprentissage autonome du développement, des outils informatiques et du fonctionnement du Web par la pratique.</p></div>
+          </section>
+
+          <section class="closing">
+            <p class="section-label">08 · PRÉSENCE EN LIGNE</p>
+            <a href="https://malang-kiya-cisse-portfolio.onrender.com" target="_blank" rel="noreferrer">Portfolio → malang-kiya-cisse-portfolio.onrender.com</a>
+            <a href="https://github.com/mkcdigitallab" target="_blank" rel="noreferrer">GitHub → github.com/mkcdigitallab</a>
+            <a href="https://gitlab.com/mkcdigitallab" target="_blank" rel="noreferrer">GitLab → gitlab.com/mkcdigitallab</a>
+          </section>
+        </div>
+      </div>
     </main>
+
+    <footer><span>Malang Kiya Cissé · CV vivant</span><span>Mis à jour au fil des projets</span></footer>
+  </div>
 </body>
 </html>
