@@ -1,135 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="CV de Malang Kiya Cissé — Développeur Web & Mobile à Dakar.">
-  <meta name="theme-color" content="#090a0c">
-  <title>Malang Kiya Cissé — CV</title>
+  <meta name="theme-color" content="#111111">
+  <title>Malang Kiya Cissé — Développeur Web & Mobile</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="topbar">
-      <a class="brand" href="./" aria-label="CV de Malang Kiya Cissé">
-        <span>MKC</span><strong>CURRICULUM VITAE</strong>
-      </a>
-      <div class="top-actions">
-        <button class="print-btn" type="button" onclick="window.print()">Imprimer / PDF</button>
+  <div class="site">
+    <nav class="toolbar" aria-label="Actions du CV">
+      <a class="brand" href="./"><span>MKC</span><small>CURRICULUM VITAE</small></a>
+      <div>
         <a href="https://malang-kiya-cisse-portfolio.onrender.com" target="_blank" rel="noreferrer">Portfolio ↗</a>
+        <button type="button" onclick="window.print()">Imprimer / PDF</button>
       </div>
-    </header>
+    </nav>
 
-    <main class="cv">
-      <section class="hero">
-        <div class="hero-photo"><img src="assets/photo.jpg" alt="Portrait de Malang Kiya Cissé"></div>
-        <div class="hero-copy">
-          <p class="eyebrow">DAKAR, SÉNÉGAL · DÉVELOPPEMENT WEB & MOBILE</p>
-          <h1>Malang Kiya<br><em>Cissé</em></h1>
-          <p class="role">Développeur Web & Mobile</p>
-          <p class="summary">Je construis des applications en partant du besoin : comprendre, structurer, développer, tester et faire évoluer un produit proprement.</p>
+    <main class="cv" id="cv">
+      <header class="identity">
+        <div class="portrait"><img src="assets/photo.jpg" alt="Portrait de Malang Kiya Cissé"></div>
+        <div class="identity-main">
+          <p class="kicker">DAKAR · SÉNÉGAL</p>
+          <h1>Malang Kiya Cissé</h1>
+          <h2>Développeur Web &amp; Mobile</h2>
+          <p class="headline">Je construis des applications en comprenant le besoin, la structure technique et le cycle de vie du projet.</p>
         </div>
-        <div class="hero-contact">
+        <div class="contact">
           <a href="mailto:papac8443@gmail.com">papac8443@gmail.com</a>
           <a href="https://github.com/mkcdigitallab" target="_blank" rel="noreferrer">github.com/mkcdigitallab</a>
           <a href="https://gitlab.com/mkcdigitallab" target="_blank" rel="noreferrer">gitlab.com/mkcdigitallab</a>
+          <a href="https://malang-kiya-cisse-portfolio.onrender.com" target="_blank" rel="noreferrer">Portfolio en ligne ↗</a>
         </div>
-      </section>
+      </header>
 
-      <div class="content">
-        <aside class="sidebar">
+      <div class="layout">
+        <aside class="left">
           <section>
-            <p class="section-label">01 · COMPÉTENCES</p>
-            <div class="skill"><b>Développement</b><span>PHP · JavaScript · HTML · CSS · Laravel · POO · MVC</span></div>
-            <div class="skill"><b>Données</b><span>PostgreSQL · MySQL · SQLite · SQL</span></div>
-            <div class="skill"><b>Ingénierie</b><span>Git · GitHub · GitLab · Docker · Linux · Bash</span></div>
-            <div class="skill"><b>Qualité</b><span>CI/CD · tests · analyse statique · UML · PlantUML</span></div>
+            <h3>Compétences</h3>
+            <div class="skill-group">
+              <b>Développement</b>
+              <p>PHP · JavaScript · HTML · CSS<br>Laravel · POO · MVC</p>
+            </div>
+            <div class="skill-group">
+              <b>Données</b>
+              <p>PostgreSQL · MySQL · SQLite<br>SQL · modélisation</p>
+            </div>
+            <div class="skill-group">
+              <b>Outils &amp; environnement</b>
+              <p>Git · GitHub · GitLab<br>Docker · Linux · Bash</p>
+            </div>
+            <div class="skill-group">
+              <b>Qualité &amp; projet</b>
+              <p>Tests · CI/CD · analyse statique<br>UML · PlantUML · documentation</p>
+            </div>
           </section>
 
           <section>
-            <p class="section-label">02 · FORMATION</p>
-            <article class="side-item">
-              <b>Sonatel Academy — ODC</b>
-              <span class="date">En cours</span>
-              <p>Développement Web & Mobile</p>
+            <h3>Formation</h3>
+            <article class="education">
+              <strong>Sonatel Academy — ODC</strong>
+              <span>En cours</span>
+              <p>Développement Web &amp; Mobile</p>
             </article>
-            <article class="side-item">
-              <b>Université numérique Cheikh Hamidou Kane</b>
-              <span class="date">1 année de licence</span>
+            <article class="education">
+              <strong>Université numérique Cheikh Hamidou Kane</strong>
+              <span>1 année de licence</span>
               <p>Mathématiques appliquées et Informatique</p>
             </article>
-            <article class="side-item">
-              <b>Lycée El Hadji Ibrahima Diop</b>
-              <span class="date">2024</span>
+            <article class="education">
+              <strong>Lycée El Hadji Ibrahima Diop</strong>
+              <span>2024</span>
               <p>Baccalauréat S2</p>
             </article>
           </section>
 
           <section>
-            <p class="section-label">03 · LANGUES</p>
-            <div class="language"><b>Français</b><span>Professionnel</span></div>
-            <div class="language"><b>Wolof</b><span>Courant</span></div>
-            <div class="language"><b>Anglais</b><span>Technique</span></div>
+            <h3>Langues</h3>
+            <ul class="languages">
+              <li><b>Français</b><span>Professionnel</span></li>
+              <li><b>Wolof</b><span>Courant</span></li>
+              <li><b>Anglais</b><span>Technique</span></li>
+            </ul>
           </section>
 
-          <section class="availability-box">
-            <p class="section-label">04 · DISPONIBILITÉ</p>
+          <section class="availability">
+            <h3>Disponibilité</h3>
             <strong>Ouvert aux opportunités</strong>
             <p>Stage · alternance · collaboration · projet réel</p>
           </section>
         </aside>
 
-        <div class="main">
+        <div class="right">
           <section>
-            <p class="section-label">05 · PROFIL</p>
-            <p class="profile">Apprenant en Développement Web & Mobile à Sonatel Academy, je développe des applications PHP et JavaScript avec des bases de données et des outils d'ingénierie comme Git, GitLab et Docker. Mon objectif est de maîtriser autant la construction du logiciel que la structuration et la gestion technique d'un projet.</p>
+            <h3>Profil</h3>
+            <p class="profile">Apprenant en Développement Web &amp; Mobile à Sonatel Academy. Je travaille principalement avec PHP, Laravel et JavaScript, avec des bases de données SQL et des outils comme Git, GitLab et Docker. Je cherche à maîtriser autant la réalisation du logiciel que la structuration et la gestion technique d’un projet : responsabilités, branches, qualité, tests, CI/CD et évolution du produit.</p>
           </section>
 
           <section>
-            <div class="section-heading"><p class="section-label">06 · PROJETS</p><span>PRODUITS · APPLICATIONS · FIL ROUGE</span></div>
+            <div class="section-head">
+              <h3>Projets sélectionnés</h3>
+              <span>RÉALISATION · APPRENTISSAGE · PRODUIT</span>
+            </div>
 
-            <article class="project featured-project">
-              <div class="project-title"><h2>Reservation-Salles</h2><span>Projet fil rouge</span></div>
-              <p class="stack">Laravel · PHP · PostgreSQL · Docker · GitLab CI/CD</p>
-              <p>Application métier de gestion des salles et réservations. Travail sur les règles métier, le modèle de données, les validations, l'architecture applicative, les tests, la qualité du code, les notifications et les pipelines CI/CD.</p>
-              <a href="https://github.com/mkcdigitallab/Reservation-Salles" target="_blank" rel="noreferrer">Voir le projet ↗</a>
+            <article class="project featured">
+              <div class="project-top"><h4>Reservation-Salles</h4><span>Projet fil rouge</span></div>
+              <p class="tech">Laravel · PHP · PostgreSQL · Docker · GitLab CI/CD</p>
+              <p>Application métier de gestion des salles et réservations. Travail sur les règles métier, le modèle de données, les validations, l’architecture, les tests, la qualité du code, les notifications et le pipeline CI/CD.</p>
+              <a href="https://github.com/mkcdigitallab/Reservation-Salles" target="_blank" rel="noreferrer">github.com/mkcdigitallab/Reservation-Salles ↗</a>
             </article>
 
             <article class="project">
-              <div class="project-title"><h2>Fondé 44</h2><span>Produit réel</span></div>
-              <p class="stack">Web · PWA · Produit · Gestion · Livraison</p>
-              <p>Transformation d'une activité artisanale familiale en expérience numérique : catalogue, disponibilité, commande, livraison et espace de gestion, avec une approche mobile-first.</p>
-              <a href="https://github.com/mkcdigitallab/fonde-44" target="_blank" rel="noreferrer">Voir le projet ↗</a>
+              <div class="project-top"><h4>Fondé 44</h4><span>Produit réel</span></div>
+              <p class="tech">Web · PWA · mobile-first · gestion · livraison</p>
+              <p>Digitalisation d’une activité artisanale familiale : présentation des produits, disponibilité, commande, livraison et espace de gestion, avec une expérience pensée d’abord pour le mobile.</p>
+              <a href="https://github.com/mkcdigitallab/fonde-44" target="_blank" rel="noreferrer">github.com/mkcdigitallab/fonde-44 ↗</a>
             </article>
 
-            <div class="project-grid">
-              <article class="project compact"><div class="project-title"><h2>Carnet BI</h2><span>Data</span></div><p>Applications autour des données, de la gestion et de la restitution d'informations.</p></article>
-              <article class="project compact"><div class="project-title"><h2>Signalement Urbain</h2><span>Web</span></div><p>Projet orienté terrain, structuration des signalements et logique applicative.</p></article>
-              <article class="project compact"><div class="project-title"><h2>FastFood MVC</h2><span>PHP</span></div><p>Application d'apprentissage de la POO, du MVC et de la gestion de données.</p></article>
+            <div class="mini-projects">
+              <article><b>Carnet BI</b><span>Data &amp; gestion</span><p>Applications orientées données et restitution d’informations.</p></article>
+              <article><b>Signalement Urbain</b><span>Web</span><p>Logique applicative et structuration de signalements terrain.</p></article>
+              <article><b>FastFood MVC</b><span>PHP</span><p>POO, MVC, SQL et organisation d’une application.</p></article>
             </div>
           </section>
 
           <section>
-            <p class="section-label">07 · EXPÉRIENCES & ACTIVITÉS</p>
-            <div class="experience"><b>Encadrement scolaire</b><p>Accompagnement de jeunes de mon entourage dans l'apprentissage des mathématiques et matières associées.</p></div>
-            <div class="experience"><b>Prestations pour particuliers</b><p>Réalisation de CV et portfolios adaptés au besoin et au contexte de chaque personne.</p></div>
-            <div class="experience"><b>Autoformation en informatique</b><p>Apprentissage autonome du développement, des outils informatiques et du fonctionnement du Web par la pratique.</p></div>
+            <h3>Expériences &amp; activités</h3>
+            <div class="activity"><b>Encadrement scolaire</b><p>Accompagnement de jeunes de mon entourage dans l’apprentissage des mathématiques et matières associées.</p></div>
+            <div class="activity"><b>Prestations pour particuliers</b><p>Réalisation de CV et portfolios adaptés au besoin et au contexte de chaque personne.</p></div>
+            <div class="activity"><b>Autoformation</b><p>Apprentissage autonome du développement et des outils informatiques par la pratique et la réalisation de projets.</p></div>
           </section>
 
-          <section class="closing">
-            <p class="section-label">08 · PRÉSENCE EN LIGNE</p>
-            <a href="https://malang-kiya-cisse-portfolio.onrender.com" target="_blank" rel="noreferrer">Portfolio → malang-kiya-cisse-portfolio.onrender.com</a>
-            <a href="https://github.com/mkcdigitallab" target="_blank" rel="noreferrer">GitHub → github.com/mkcdigitallab</a>
-            <a href="https://gitlab.com/mkcdigitallab" target="_blank" rel="noreferrer">GitLab → gitlab.com/mkcdigitallab</a>
+          <section class="project-approach">
+            <h3>Ma façon de travailler</h3>
+            <div class="approach">
+              <span>01 <b>Comprendre</b></span>
+              <span>02 <b>Structurer</b></span>
+              <span>03 <b>Développer</b></span>
+              <span>04 <b>Tester</b></span>
+              <span>05 <b>Faire évoluer</b></span>
+            </div>
           </section>
         </div>
       </div>
-    </main>
 
-    <footer><span>Malang Kiya Cissé · CV vivant</span><span>Mis à jour au fil des projets</span></footer>
+      <footer class="cv-footer">
+        <span>Malang Kiya Cissé · CV vivant</span>
+        <span>Mis à jour au fil des projets</span>
+      </footer>
+    </main>
   </div>
 </body>
 </html>
