@@ -1,189 +1,180 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
-
-:root{
-  --ink:#151515;
-  --muted:#696966;
-  --quiet:#8d8d88;
-  --paper:#fff;
-  --screen:#e8e8e4;
-  --line:#deded8;
-  --soft:#f5f5f1;
-  --accent:#607f18;
-  --accent-soft:#edf2df;
-  --dark:#111;
-  --max:1160px;
+:root {
+  --ink: #202a35;
+  --muted: #586675;
+  --faint: #788491;
+  --line: #dce2e7;
+  --accent: #245c68;
+  --paper: #ffffff;
+  --canvas: #edf0f2;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--screen);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;font-size:14px;line-height:1.5}
-a{color:inherit;text-decoration:none}
-button{font:inherit}
-.site{width:min(calc(100% - 48px),var(--max));margin:0 auto}
-.toolbar{height:76px;display:flex;align-items:center;justify-content:space-between}
-.toolbar .brand{display:flex;align-items:center;gap:11px}
-.brand span{display:grid;place-items:center;width:34px;height:34px;background:var(--dark);color:#fff;border-radius:8px;font:800 10px "Manrope",sans-serif;letter-spacing:-.04em}
-.brand small{font-size:9px;letter-spacing:.15em;color:#555}
-.toolbar>div{display:flex;align-items:center;gap:18px;font-size:10px;color:#555}
-.toolbar a:hover{text-decoration:underline;text-underline-offset:4px}
-.toolbar button{border:1px solid #cfcfc9;background:#fff;padding:8px 12px;border-radius:6px;color:#171717;cursor:pointer;font-size:10px}
-.toolbar button:hover{background:var(--soft)}
-
-.cv{width:100%;background:var(--paper);box-shadow:0 20px 60px rgba(0,0,0,.10);border:1px solid #d6d6d1}
-.identity{
-  position:relative;
-  display:grid;
-  grid-template-columns:82px minmax(0,1fr) 225px;
-  gap:23px;
-  align-items:end;
-  padding:38px 42px 34px;
-  border-bottom:1px solid var(--line);
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font: 10pt/1.48 "DM Sans", Arial, sans-serif;
 }
-.identity-rule{position:absolute;left:42px;top:0;width:54px;height:4px;background:var(--accent)}
-.portrait{width:82px;height:82px;border-radius:50%;overflow:hidden;background:#ddd}
-.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 18%}
-.kicker{margin:0;color:var(--accent);font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
-.identity h1{margin:5px 0 0;font:800 clamp(38px,4.5vw,57px)/.95 "Manrope",sans-serif;letter-spacing:-.06em}
-.identity h2{margin:8px 0 0;font:700 16px/1.2 "Manrope",sans-serif}
-.headline{max-width:650px;margin:9px 0 0;color:#565653;font-size:11px;line-height:1.5}
-.contact{display:flex;flex-direction:column;align-items:flex-end;gap:6px;font-size:9px;color:#40403e}
-.contact a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
-
-.layout{display:grid;grid-template-columns:225px minmax(0,1fr)}
-.left{padding:30px 25px 34px;background:#fafaf7;border-right:1px solid var(--line)}
-.right{padding:30px 40px 34px}
-.left section+section,.right section+section{margin-top:30px}
-.side-intro{padding:0 0 21px;border-bottom:1px solid var(--line)}
-.side-label,.section-label{display:block;color:var(--accent);font-size:8px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
-.side-intro strong{display:block;margin-top:6px;font:800 13px "Manrope",sans-serif}
-.side-intro p{margin:5px 0 0;color:#666;font-size:9px;line-height:1.45}
-
-h3{margin:0 0 13px;font:800 10px/1 "Manrope",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#292927}
-.left h3{display:flex;align-items:center;gap:9px}
-.left h3:after{content:"";height:1px;flex:1;background:var(--line)}
-.skill-group{margin-bottom:16px}
-.skill-group:last-child{margin-bottom:0}
-.skill-group b,.education strong,.activity b{display:block;font:700 11px/1.25 "Manrope",sans-serif}
-.skill-group p,.education p,.activity p{margin:4px 0 0;color:#62625f;font-size:9px;line-height:1.45}
-.education{margin-bottom:16px}
-.education:last-child{margin-bottom:0}
-.education span{display:block;margin-top:3px;color:var(--accent);font-size:7px;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
-.languages{list-style:none;padding:0;margin:0}
-.languages li{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid var(--line);font-size:9px}
-.languages li:last-child{border-bottom:0}
-.languages span{color:#777}
-.profile-section .section-label,.projects-section .section-label,.experience-section .section-label,.project-approach .section-label{margin-bottom:7px}
-.right h3{font-size:10px;margin-bottom:12px}
-.profile{max-width:800px;margin:0;color:#454542;font-size:11px;line-height:1.65}
-.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px}
-.section-head>span{color:#92928d;font-size:7px;white-space:nowrap;letter-spacing:.08em}
-.project{padding:14px 0;border-bottom:1px solid var(--line);break-inside:avoid}
-.project:first-of-type{padding-top:0}
-.project.featured{padding:0 0 14px 15px;border-left:3px solid var(--accent)}
-.project-top{display:flex;justify-content:space-between;align-items:baseline;gap:15px}
-.project h4{margin:0;font:800 17px/1.2 "Manrope",sans-serif;letter-spacing:-.025em}
-.project-top span{font-size:7px;color:#777;letter-spacing:.09em;text-transform:uppercase;white-space:nowrap}
-.project p{margin:5px 0 0;color:#555;font-size:9px;line-height:1.5}
-.project .tech{color:var(--accent);font-size:7.5px;font-weight:700}
-.project>a{display:inline-block;margin-top:6px;color:#444;font-size:7.5px;text-decoration:underline;text-underline-offset:3px}
-.mini-projects{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:11px;break-inside:avoid}
-.mini-projects article{padding:11px;background:var(--soft);border:1px solid #e4e4df;border-radius:5px}
-.mini-projects b{display:block;font:800 10px "Manrope",sans-serif}
-.mini-projects span{display:block;margin-top:3px;color:var(--accent);font-size:6.5px;text-transform:uppercase;letter-spacing:.08em}
-.mini-projects p{margin:5px 0 0;color:#666;font-size:7.5px;line-height:1.4}
-.activity{padding:9px 0;border-bottom:1px solid var(--line);break-inside:avoid}
-.activity:first-of-type{padding-top:0}
-.activity:last-child{border-bottom:0}
-.activity p{max-width:760px}
-.approach{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}
-.approach span{padding:8px;background:var(--soft);border:1px solid #e4e4df;border-radius:4px;color:#8b8b86;font-size:6.5px}
-.approach b{display:block;margin-top:2px;color:#242422;font:700 8px "Manrope",sans-serif}
-.cv-footer{display:flex;justify-content:space-between;padding:12px 42px;border-top:1px solid var(--line);color:#8a8a85;font-size:7px;letter-spacing:.04em}
-
-@media(max-width:850px){
-  .site{width:min(calc(100% - 24px),680px)}
-  .toolbar{height:64px}
-  .brand small{display:none}
-  .toolbar>div{gap:10px}
-  .identity{grid-template-columns:70px 1fr;gap:16px;padding:26px 22px}
-  .identity-rule{left:22px}
-  .portrait{width:70px;height:70px}
-  .identity h1{font-size:clamp(32px,8vw,48px)}
-  .identity h2{font-size:14px}
-  .headline{font-size:10px}
-  .contact{grid-column:1/-1;align-items:flex-start;display:grid;grid-template-columns:1fr 1fr;gap:6px;padding-top:14px;border-top:1px solid var(--line)}
-  .layout{grid-template-columns:1fr}
-  .left{border-right:0;border-bottom:1px solid var(--line);padding:24px 22px}
-  .right{padding:26px 22px}
-  .mini-projects{grid-template-columns:1fr}
-  .approach{grid-template-columns:1fr 1fr}
+a { color: inherit; text-decoration: none; }
+.page-tools {
+  width: min(210mm, calc(100% - 32px));
+  margin: 18px auto 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+  color: var(--muted);
+  font-size: 10pt;
 }
-@media(max-width:500px){
-  .site{width:calc(100% - 14px)}
-  .toolbar{padding:0 3px}
-  .toolbar>div>a{display:none}
-  .identity{grid-template-columns:55px 1fr;padding:21px 16px;gap:13px}
-  .identity-rule{left:16px}
-  .portrait{width:55px;height:55px}
-  .identity h1{font-size:30px}
-  .identity h2{font-size:12px}
-  .headline{font-size:9px}
-  .contact{grid-template-columns:1fr;font-size:9px}
-  .left,.right{padding-left:16px;padding-right:16px}
-  .section-head{display:block}
-  .section-head>span{display:block;margin-top:-7px;margin-bottom:11px}
-  .approach{grid-template-columns:1fr}
+.page-tools a:hover { color: var(--accent); text-decoration: underline; }
+.page-tools button {
+  border: 1px solid #c5ced5;
+  border-radius: 4px;
+  background: #fff;
+  color: var(--ink);
+  padding: 9px 13px;
+  font: inherit;
+  cursor: pointer;
 }
-
-/* True A4 composition: the printed page is the primary design target. */
-@media print{
-  @page{size:A4 portrait;margin:0}
-  html,body{width:210mm;min-height:297mm}
-  body{margin:0;background:#fff!important;color:#151515!important;font-size:8.5pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .site{width:210mm;margin:0}
-  .toolbar{display:none!important}
-  .cv{width:210mm;min-height:297mm;border:0;box-shadow:none}
-  .identity{grid-template-columns:22mm minmax(0,1fr) 53mm;gap:6mm;padding:9mm 11mm 8mm;min-height:45mm}
-  .identity-rule{left:11mm;width:15mm;height:1.2mm}
-  .portrait{width:22mm;height:22mm}
-  .kicker{font-size:5.5pt}
-  .identity h1{font-size:26pt;line-height:.95;margin-top:1.2mm}
-  .identity h2{font-size:10pt;margin-top:1.4mm}
-  .headline{font-size:7.2pt;line-height:1.4;margin-top:1.3mm}
-  .contact{font-size:6.4pt;gap:1.4mm}
-  .layout{grid-template-columns:43mm minmax(0,1fr)}
-  .left{padding:6mm 5mm 7mm 8mm}
-  .right{padding:6mm 9mm 7mm}
-  .left section+section,.right section+section{margin-top:5mm}
-  .side-intro{padding-bottom:4mm}
-  .side-label,.section-label{font-size:5.2pt}
-  .side-intro strong{font-size:7.7pt;margin-top:1.2mm}
-  .side-intro p{font-size:6.2pt;margin-top:1mm}
-  h3,.right h3{font-size:6.3pt;margin-bottom:2.4mm}
-  .skill-group{margin-bottom:2.8mm}
-  .skill-group b,.education strong,.activity b{font-size:7.2pt}
-  .skill-group p,.education p,.activity p{font-size:6.1pt;line-height:1.34;margin-top:.8mm}
-  .education{margin-bottom:2.8mm}
-  .education span{font-size:5.3pt;margin-top:.5mm}
-  .languages li{padding:1.2mm 0;font-size:6.1pt}
-  .profile{font-size:7.1pt;line-height:1.47}
-  .section-head>span{font-size:4.8pt}
-  .project{padding:2.7mm 0}
-  .project.featured{padding-left:3mm;border-left:1mm solid var(--accent);padding-bottom:3mm}
-  .project h4{font-size:10pt}
-  .project-top span{font-size:5.1pt}
-  .project p{font-size:6.3pt;line-height:1.35;margin-top:.9mm}
-  .project .tech{font-size:5.5pt}
-  .project>a{font-size:5.5pt;margin-top:1mm}
-  .mini-projects{gap:2mm;margin-top:2.2mm}
-  .mini-projects article{padding:2.2mm;border-radius:.8mm}
-  .mini-projects b{font-size:6.7pt}
-  .mini-projects span{font-size:4.7pt;margin-top:.5mm}
-  .mini-projects p{font-size:5.4pt;line-height:1.27;margin-top:.9mm}
-  .activity{padding:1.8mm 0}
-  .activity p{font-size:5.9pt;line-height:1.28;margin-top:.7mm}
-  .approach{gap:1.3mm}
-  .approach span{padding:1.6mm 1.4mm;font-size:4.7pt}
-  .approach b{font-size:5.8pt}
-  .cv-footer{padding:2.8mm 11mm;font-size:5.1pt}
-  a{text-decoration:none!important}
+.cv {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto 28px;
+  padding: 15mm 16mm 10mm;
+  background: var(--paper);
+  box-shadow: 0 8px 32px #17212b12;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16mm;
+  padding-bottom: 7mm;
+  border-bottom: 2px solid var(--accent);
+}
+.location {
+  margin: 0 0 2mm;
+  color: var(--accent);
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: .13em;
+}
+h1 {
+  margin: 0;
+  font: 800 27pt/1.08 "Manrope", Arial, sans-serif;
+  letter-spacing: -.045em;
+}
+.title {
+  margin: 2.5mm 0 0;
+  font: 700 12pt/1.25 "Manrope", Arial, sans-serif;
+}
+.summary-line { margin: 2mm 0 0; color: var(--muted); font-size: 9pt; }
+.portrait {
+  width: 27mm;
+  height: 32mm;
+  flex: 0 0 27mm;
+  object-fit: cover;
+  object-position: center 18%;
+  border-radius: 2px;
+  filter: saturate(.88);
+}
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4mm 7mm;
+  padding: 3.5mm 0 4.5mm;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 8.3pt;
+}
+.contact-row a:hover, .project-link:hover { color: var(--accent); text-decoration: underline; }
+.content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+  gap: 10mm;
+  padding-top: 6mm;
+}
+section { break-inside: avoid; }
+.main-column > section + section, .side-column > section + section { margin-top: 6mm; }
+h2 {
+  margin: 0 0 3mm;
+  padding-bottom: 1.7mm;
+  border-bottom: 1px solid var(--line);
+  color: var(--accent);
+  font: 800 10pt/1.2 "Manrope", Arial, sans-serif;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+p { margin: 0; }
+.main-column > section > p { color: #364452; }
+.project { padding: 3.5mm 0; border-bottom: 1px solid var(--line); break-inside: avoid; }
+.project:last-child { border-bottom: 0; padding-bottom: 0; }
+.project-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 3mm; }
+h3 { margin: 0; font: 700 10pt/1.3 "Manrope", Arial, sans-serif; }
+.project-heading span { color: var(--faint); font-size: 7.5pt; text-align: right; }
+.stack { margin: 1.2mm 0 1.5mm; color: var(--accent); font-size: 8pt; font-weight: 700; }
+.project > p:not(.stack), .activity p, .education p { color: var(--muted); font-size: 8.7pt; line-height: 1.45; }
+.project-link { display: inline-block; margin-top: 1.5mm; color: var(--accent); font-size: 8pt; font-weight: 600; }
+.activity + .activity { margin-top: 3mm; }
+.activity p { margin-top: 1mm; }
+.skill + .skill { margin-top: 3mm; }
+.skill p { margin-top: .8mm; color: var(--muted); font-size: 8.6pt; line-height: 1.45; }
+.education + .education { margin-top: 3.5mm; }
+.education h3 { font-size: 9pt; }
+.education p { margin-top: 1mm; }
+.education .date { color: var(--accent); font-size: 8pt; font-weight: 700; }
+.languages { list-style: none; padding: 0; margin: 0; }
+.languages li { display: flex; justify-content: space-between; gap: 3mm; padding: 1.8mm 0; border-bottom: 1px solid var(--line); font-size: 8.7pt; }
+.languages li:last-child { border-bottom: 0; }
+.languages small { color: var(--muted); font-size: 8pt; }
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7mm;
+  padding-top: 3mm;
+  border-top: 1px solid var(--line);
+  color: var(--faint);
+  font-size: 7.5pt;
+}
+@media (max-width: 760px) {
+  .page-tools { width: calc(100% - 28px); margin-top: 12px; gap: 12px; font-size: 9pt; }
+  .cv { width: calc(100% - 20px); min-height: 0; padding: 24px 20px; margin-bottom: 12px; }
+  .header { gap: 16px; }
+  h1 { font-size: clamp(25px, 6vw, 34px); }
+  .portrait { width: 76px; height: 90px; flex-basis: 76px; }
+  .content { grid-template-columns: 1fr; gap: 24px; }
+  .main-column > section + section, .side-column > section + section { margin-top: 24px; }
+  .contact-row { gap: 8px 16px; }
+}
+@media (max-width: 420px) {
+  .page-tools { justify-content: space-between; font-size: 8pt; }
+  .page-tools button { padding: 8px; font-size: 8pt; }
+  .cv { padding: 20px 16px; }
+  .header { align-items: flex-start; gap: 10px; }
+  .portrait { width: 64px; height: 78px; flex-basis: 64px; }
+  h1 { font-size: 25px; }
+  .title { font-size: 10pt; }
+  .summary-line { font-size: 8pt; }
+  .contact-row { display: grid; grid-template-columns: 1fr 1fr; font-size: 8pt; }
+  .project-heading { align-items: flex-start; flex-direction: column; gap: 1mm; }
+}
+@media print {
+  @page { size: A4 portrait; margin: 0; }
+  body { width: 210mm; background: #fff; font-size: 9pt; }
+  .page-tools { display: none !important; }
+  .cv { width: 210mm; min-height: 297mm; margin: 0; padding: 13mm 15mm 8mm; box-shadow: none; }
+  .header { padding-bottom: 6mm; }
+  h1 { font-size: 25pt; }
+  .portrait { width: 24mm; height: 29mm; flex-basis: 24mm; }
+  .contact-row { padding: 3mm 0; }
+  .content { gap: 8mm; padding-top: 5mm; }
+  .main-column > section + section, .side-column > section + section { margin-top: 4.5mm; }
+  h2 { margin-bottom: 2.2mm; font-size: 9pt; }
+  .project { padding: 2.6mm 0; }
+  .project > p:not(.stack), .activity p, .education p, .skill p { font-size: 8pt; }
+  .stack, .project-link { font-size: 7.5pt; }
+  .activity + .activity, .skill + .skill { margin-top: 2.3mm; }
+  .education + .education { margin-top: 2.5mm; }
+  footer { margin-top: 5mm; }
+  a { text-decoration: none; }
 }
